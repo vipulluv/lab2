@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;1,100&display=swap" rel="stylesheet">
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+        body{
+          background-color: #f0f2f5;
+        }
+        hr{
+          width: 100%;
+        }
+        
+        section{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border: 1px solid black; */
+            background-color: #f0f2f5;
+            height: 100vh;
+            gap: 130px; 
+            max-width: 100%;
+        }
+        .fb{
+          /* position: relative; */
+        }
+    
+        form{
+          display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        width: 400px;
+        height: 350px;
+        border: 1px solid black;
+        background-color: #fff;
+        padding: 10px;      
+        border-radius: 10px;  
+        border: 1px solid white;
+        box-shadow: 1px 1px 10px silver;
+        
+    }
+    button[type="submit"]{
+        background-color: #166fe5;
+        color: white;
+        padding: 10px;
+        width: 375px;
+        font-size: 25px;
+        border-radius: 7px;
+        cursor: pointer;
+        border: 1px solid white;
+
+      }
+      button[type="button"]{
+        background-color: #54B435;
+        color: white;
+        width: 180px;
+        height: 50px;
+        font-size: 17px;
+        border-radius: 7px;
+        /* position: relative;
+        left: 100px;
+        bottom: 20px; */
+        padding: 10px;
+        font-weight: 100px;
+        border: 1px solid white;
+
+      }
+      button[type="button"]:hover{
+        background-color: #449429;
+        cursor: pointer;
+      
+      }
+      a{
+        /* position: relative;
+        left: 120px; */
+        text-decoration: none;
+        color:  #166fe5;
+        
+
+      }
+      a:hover{
+        text-decoration: underline;
+
+      }
+      input[type="text"]{
+        width: 370px;
+        padding: 15px;
+        border-radius: 5px;
+        border: 1px solid silver;
+        caret-color: #166fe5;
+      }
+      input[type="password"]{
+        width: 370px;
+        padding: 15px;
+        border-radius: 5px;
+        border: 1px solid silver;
+        caret-color: #166fe5;
+      }
+      input[placeholder="Email address or phone number"]{
+        font-size: 17px;
+      }
+
+      input[placeholder="Password"]{
+        font-size: 17px;
+      }
+      .a1{
+        /* position: relative;
+        left: 20px;
+        top: 17px; */
+        color: black;
+        font-weight: bold;
+        
+      }
+      p{ 
+        position: relative;
+        left: 50px;
+        top: 30px;
+        font-size: 15px;
+      }
+      img{
+        width: 300px;
+        height: 100px;
+      }
+      .p1{
+        margin-bottom: 120px;
+        margin-left: 35px;
+      }
+      h2{
+        margin-left: 35px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 24px; 
+      }
+      .fp{
+              display: block;
+              /* margin:0 auto; */
+              /* border:1px solid red; */
+              width:180px;
+              text-align: center;
+      }
+      
+      input{
+        border:none;
+        outline: none;
+      }
+      input:focus{
+        outline:1px solid blue;
+      }
+      @media(max-width:768px){
+        section{
+            /* display: flex; */
+            justify-content: start;
+            align-items: center;
+            /* background-color: #f0f2f5;
+            height: 100vh;
+            gap: 10px;
+            max-width: 100%; */
+            gap:20px;
+            flex-direction: column;
+            transition: all 1s ease-in-out;
+        }
+        h2{
+        display: none;
+      }
+      img{
+        width: 300px;
+        height: 90px;
+      }
+      form{
+        width: 300px;
+        height: 350px;
+        border: 1px solid black;
+        background-color: #fff;
+        padding: 10px;      
+        border-radius: 10px;  
+        border: 1px solid white;
+        
+      }
+
+      input[type="password"], input[type="text"]{
+          width:100%;
+      }
+      button[type="submit"]{
+        width: 100%;
+      }
+      p{ 
+        position: relative;
+        left: 5px;
+        top: 30px;
+        font-size: 15px;
+      }
+      section div:nth-of-type(1){
+          height: 80px;
+
+        }
+    }
+    </style>
+</head>
+<body>
+    <section>
+       <div >
+                <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="">
+                <h2> Facebook helps you connect and share </h2>
+                <h2 class="p1">with the people in your life. </h2>
+              </div>
+              <div class="fb">
+            <form action="">
+                <input type="text" placeholder="Email address or phone number"><br>
+                <input type="password" placeholder="Password"><br>
+                <button type="submit">Log in</button><br>
+                <a href="#" class="fp">Forgotten password?</a><br>
+                <hr><br>
+                <button type="button">Create new account</button>
+
+            </form>
+            <p> <a href="#" class="a1">Create a Page</a> for a celebrity, brand or buisness.</p>
+          </div>
+       
+    </section>
+    
+</body>
+</html>
